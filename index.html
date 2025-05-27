@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Muhammad Ali_2380120</title>
+  <link rel="icon" href="szabist.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav style="text-align: center;">
+    <button onclick="showPage('home')">Home</button>
+    <button onclick="showPage('bar')">Bar Charts</button>
+    <button onclick="showPage('pie')">Pie Charts</button>
+    <button onclick="showPage('doughnut')">Doughnut Charts</button>
+    <button onclick="showPage('radar')">Radar Charts</button>
+  </nav>
+
+  <section id="home" class="page">
+    <h2 style="text-align: center;">Upload CSV File</h2>
+    <p style="text-align: center;">CSV file should have headers.</p>
+    <center><input type="file" id="csvFile" accept=".csv"></center>
+  </section>
+
+  <section id="bar" class="page" style="display:none">
+    <center><h2>Bar Charts</h2></center>
+    <div id="bar-charts"></div>
+  </section>
+
+  <section id="pie" class="page" style="display:none">
+    <center><h2>Pie Charts</h2></center>
+    <div id="pie-charts"></div>
+  </section>
+
+  <section id="doughnut" class="page" style="display:none">
+    <center><h2>Doughnut Charts</h2></center>
+    <div id="doughnut-charts"></div>
+  </section>
+
+  <section id="radar" class="page" style="display:none">
+    <center><h2>Radar Charts</h2></center>
+    <div id="radar-charts"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
