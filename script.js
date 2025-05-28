@@ -7,9 +7,6 @@ function showPage(id) {
 
 function clearCharts() {
   charts = [];
-  ['bar-charts', 'pie-charts', 'doughnut-charts', 'radar-charts'].forEach(id => {
-    document.getElementById(id).innerHTML = '';
-  });
 }
 
 document.getElementById("csvFile").addEventListener("change", function (e) {
